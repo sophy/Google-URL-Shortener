@@ -6,7 +6,9 @@
  * Licensed under The MIT License
  * Redistributions of files must retain the above copyright notice.
  *
- * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
+ * @license         MIT License (http://www.opensource.org/licenses/mit-license.php)
+ * @author          Sophy Prak, sophy.prak@gmail.com
+ * @link            http://kooms.info
  */
 
 /**
@@ -35,6 +37,10 @@ class GoogleURL
      */
     private $_shortUrl;
 
+    /**
+     *
+     * @param string $apiKey
+     */
     public function  __construct($apiKey) {
         //Google URL Shortener 
         $this->_apiUrl = API_URL.$apiKey;

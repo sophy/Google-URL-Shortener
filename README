@@ -1,0 +1,20 @@
+This class to generate shornter and expendfor Google URL Shortener.
+
+Example:
+	require_once("GoogleURL.php");
+	
+	$url = new GoogleURL('YOUR_GOOGLE_API_KEY');
+	//Short url
+	$shorten = $url->shorten("http://support.mozilla.com/en-US/kb/Keyboard%20shortcuts");
+	echo $shorten; //http://goo.gl/dbE8A
+	
+	//expand url
+	echo $url->expand($shorten); //http://support.mozilla.com/en-US/kb/Keyboard%20shortcuts
+	
+	//long url clicks
+	echo $url->getLongUrlCliks();
+	
+	//short url click
+	echo $url->getShortUrlClicks();
+	
+NOTE: Get Google API Key https://code.google.com/apis/console/
